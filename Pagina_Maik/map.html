@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Multimedia</title>
+    <link rel="stylesheet" href="./map.css">
+</head>
+
+<body>
+   <header>
+    <div class="logo">Diseño <span>Multimedia</span></div>
+    <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="nosotros.html">NOSOTROS</a></li>
+            <li><a href="servicio.html">SERVICIOS</a></li>
+            <li><a href="map.html">CONTACTO</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <section class="subscription">
+        <h1>Suscribete a nuestro boletín</h1>
+        <div class="email-subscribe">
+            <input type="email" placeholder="Ingrese el Email...">
+            <button>Suscribirse</button>
+        </div>
+    </section>
+
+    <main>
+        <div class="contact-form">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ingresa tu email">
+
+                <label for="telefono">Teléfono</label>
+                <input type="text" id="telefono" placeholder="Ingresa tu teléfono">
+
+                <label for="celular">Celular</label>
+                <input type="text" id="celular" placeholder="Ingresa tu celular">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" placeholder="Ingresa tu mensaje"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <aside>
+            <h2>Qué hacemos</h2>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam vel mi dapibus eget porta in, lacinia et magna.
+            </p>
+            <div class="map-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31818.468202059415!2d-75.67441920000002!3d4.538367999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1748353030764!5m2!1ses!2sco" width="100%" height="288+" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Graphixel Desarrollo Web, Copyright © 2017</p>
+    </footer>
+
+    <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector(".nav-list");
+
+    toggle.addEventListener("click", () => {
+        navList.classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>

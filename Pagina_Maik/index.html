@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diseño Multimedia</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <span class="blue">Diseño</span>Multimedia
+    </div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <div class="menu" id="menu">
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="servicio.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="map.html">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <img src="img/cabecera.jpg" alt="Imagen de computadora" />
+    <div class="hero-content">
+      <h1>Expertos en Tecnologías Web</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dolorum quidem id, voluptatibus corrupti.</p>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Suscríbete a nuestro boletín</h2>
+    <form>
+      <input type="email" placeholder="Ingrese el correo" required />
+      <button type="submit">Suscribete</button>
+    </form>
+  </section>
+
+  <section class="features">
+    <div class="features-container">
+      <div class="feature">
+        <img src="img/logo_html.png" alt="HTML5" />
+        <h3>HTML5</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dolorum quidem id, voluptatibus corrupti.</p>
+      </div>
+      <div class="feature">
+        <img src="img/logo_css.png" alt="CSS3" />
+        <h3>CSS3</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dolorum quidem id, voluptatibus corrupti.</p>
+      </div>
+      <div class="feature">
+        <img src="img/logo_brush.png" alt="Diseño Gráfico" />
+        <h3>Diseño Gráfico</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dolorum quidem id, voluptatibus corrupti. </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Desarrollo gráfico Web
+  </footer>
+  <script>
+    // Menú hamburguesa responsivo
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+    // Opcional: cerrar menú al hacer clic en un enlace
+    document.querySelectorAll('.menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>

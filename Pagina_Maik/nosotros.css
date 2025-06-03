@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+    background-color: #24282b;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    border-bottom: 3px solid #00a1d6;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 8%;
+    margin-right: 40%;
+}
+.logo span {
+  color: #007bff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+   
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #00a1d6;
+}
+
+/* Subscription Section */
+.subscription {
+    background-color: #24282b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+}
+
+.subscription h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding-left: 10%;
+    
+    
+}
+
+.email-subscribe {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 30%;
+}
+
+.email-subscribe input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    border-radius: 3px;
+    
+}
+
+.email-subscribe button {
+    padding: 10px 20px;
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.email-subscribe button:hover {
+    background-color: #d63e14;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 15px 0;
+}
+
+
+
+.newsletter h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.newsletter input {
+  padding: 8px 15px;
+  border: none;
+  width: 250px;
+  font-size: 14px;
+}
+
+.newsletter button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Main Content */
+.main-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+
+.content-section {
+  flex: 2;
+  padding: 30px;
+  min-width: 300px;
+}
+
+.content-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.content-section p {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.quote-section {
+  background-color: #333;
+  padding: 20px;
+  margin: 20px 0;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  background-color: #333;
+  color: white;
+  padding: 30px;
+  height: fit-content;
+  min-width: 250px;
+}
+
+.sidebar h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.sidebar p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 14px;
+  text-align: justify;
+}
+
+/* Footer */
+.footer {
+  background-color: #2aa5db;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+/* --------- RESPONSIVE DESIGN --------- */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .newsletter-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-container {
+    flex-direction: column;
+  }
+
+  .newsletter input {
+    width: 100%;
+  }
+
+  .newsletter-form {
+    width: 100%;
+  }
+
+  .sidebar,
+  .content-section {
+    width: 100%;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 914px) {
+  header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .email-subscribe {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+  }
+}
+
