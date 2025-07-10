@@ -1,0 +1,31 @@
+.footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer .social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer .social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1); /* pone íconos blancos si son negros */
+}
+
+@media screen and (max-width: 768px) {
+  .footer .social-icons {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .footer .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+}
